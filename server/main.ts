@@ -1,79 +1,84 @@
+import { Profile } from './../imports/models';
 import { Accounts } from 'meteor/accounts-base';
 import { Meteor } from 'meteor/meteor';
 import { Chats, Messages, Users } from '../imports/collections';
 import { MessageType, Picture } from '../imports/models';
 
 Meteor.startup(() => {
+
   if (Meteor.settings) {
     Object.assign(Accounts._options, Meteor.settings['accounts-phone']);
     SMS.twilio = Meteor.settings['twilio'];
   }
 
-  if (Users.collection.find().count() > 0) {
-    return;
-  }
-
+  if (Users.collection.find().count() > 0) { return; }
+//--------> user start <--------//
+//==============================User-A========================//
+// url(/assets/chat-background.jpg);
   let picture = importPictureFromUrl({
-    name: 'man1.jpg',
-    url: 'https://randomuser.me/api/portraits/men/1.jpg'
+    name: 'user-A.png',
+    url: '/profile/user-A.png' 
   });
 
   Accounts.createUserWithPhone({
-    phone: '+972540000001',
+    phone: '+212666000001',
     profile: {
-      name: 'Ethan Gonzalez',
+      name: 'person A',
       pictureId: picture._id
     }
   });
 
+//==============================User-B========================//
   picture = importPictureFromUrl({
     name: 'lego1.jpg',
     url: 'https://randomuser.me/api/portraits/lego/1.jpg'
   });
 
   Accounts.createUserWithPhone({
-    phone: '+972540000002',
+    phone: '+212666000002',
     profile: {
-      name: 'Bryan Wallace',
+      name: 'person B',
       pictureId: picture._id
     }
   });
 
+//==============================User-C========================//
   picture = importPictureFromUrl({
     name: 'woman1.jpg',
     url: 'https://randomuser.me/api/portraits/women/1.jpg'
   });
 
   Accounts.createUserWithPhone({
-    phone: '+972540000003',
+    phone: '+212666000003',
     profile: {
-      name: 'Avery Stewart',
+      name: 'person C',
       pictureId: picture._id
     }
   });
 
+//==============================User-D========================//
   picture = importPictureFromUrl({
     name: 'woman2.jpg',
     url: 'https://randomuser.me/api/portraits/women/2.jpg'
   });
 
   Accounts.createUserWithPhone({
-    phone: '+972540000004',
+    phone: '+212666000004',
     profile: {
-      name: 'Katie Peterson',
+      name: 'person D',
       pictureId: picture._id
     }
   });
-
+//==============================User-E========================//
   picture = importPictureFromUrl({
     name: 'man2.jpg',
     url: 'https://randomuser.me/api/portraits/men/2.jpg'
   });
 
   Accounts.createUserWithPhone({
-    phone: '+972540000005',
+    phone: '+212666000005',
     profile: {
-      name: 'Ray Edwards',
+      name: 'person E',
       pictureId: picture._id
     }
   });
