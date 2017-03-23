@@ -1,16 +1,16 @@
 <ion-header>
-  <ion-toolbar *ngIf="searching" color="whatsapp">
+  <ion-toolbar *ngIf="searching" color="iMy_color">
     <ion-searchbar
       autofocus
       class="seach-bar"
-      color="whatsapp"
+      color="iMy_color"
       [showCancelButton]="true"
       (ionInput)="updateSubscription($event.target.value); searching = true;"
       (ionClear)="updateSubscription(undefined); searching = false;">
       </ion-searchbar>
   </ion-toolbar>
 
-  <ion-toolbar *ngIf="!searching" color="whatsapp">
+  <ion-toolbar *ngIf="!searching" color="iMy_color">
     <ion-title>New Chat</ion-title>
 
     <ion-buttons left>
