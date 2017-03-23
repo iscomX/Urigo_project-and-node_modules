@@ -1,25 +1,22 @@
 <ion-header>
-  <ion-navbar color="iMy_color">
-    <ion-title>Login</ion-title>
+    <ion-navbar color="iMy_color">
+        <ion-title>Login</ion-title>
 
-    <ion-buttons end>
-      <button ion-button class="done-button" (click)="login()">Done</button>
-    </ion-buttons>
-  </ion-navbar>
+        <ion-buttons end>
+            <button ion-button class="done-button" (click)="login()">Done</button>
+        </ion-buttons>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding class="login-page-content">
-  <div class="instructions">
-    <div>
-      Please enter your phone number including its country code.
+    <div class="instructions">
+        <div>user-A +212666000001</div><br>
+        <div>user-B +212666000002</div><br>
+        <div>user-C +212666000003</div><br>
+        <div>user-D +212666000004</div>
     </div>
-    <br>
-    <div>
-      The messenger will send a one time SMS message to verify your phone number. Carrier SMS charges may apply.
-    </div>
-  </div>
 
-  <ion-item>
-    <ion-input [(ngModel)]="phone" (keypress)="onInputKeypress($event)" type="tel" placeholder="Your phone number"></ion-input>
-  </ion-item>
+    <ion-item>
+        <ion-input [(ngModel)]="phone" (keypress)="onInputKeypress($event)" type="tel" placeholder="Your phone number"></ion-input>
+    </ion-item>
 </ion-content>

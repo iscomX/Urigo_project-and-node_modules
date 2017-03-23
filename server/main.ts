@@ -16,17 +16,17 @@ Meteor.startup(() => {
 //==============================User-A========================//
 // url(/assets/chat-background.jpg);
   let picture = importPictureFromUrl({
-    name: 'user-A.png',
-    url: '/profile/user-A.png' 
-  });
+                                      name: 'user-A.png',
+                                      url: 'https://randomuser.me/api/portraits/women/2.jpg' 
+                                     });
 
   Accounts.createUserWithPhone({
-    phone: '+212666000001',
-    profile: {
-      name: 'person A',
-      pictureId: picture._id
-    }
-  });
+                             phone: '+212666000001',
+                             profile: {
+                                     name: 'person A',
+                                     pictureId: picture._id
+                                      }
+                              });
 
 //==============================User-B========================//
   picture = importPictureFromUrl({
@@ -81,11 +81,13 @@ Meteor.startup(() => {
       name: 'person E',
       pictureId: picture._id
     }
+    });
   });
-});
 
-function importPictureFromUrl(options: { name: string, url: string }): Picture {
-  const description = { name: options.name };
-
-  return Meteor.call('ufsImportURL', options.url, description, 'pictures');
+//==============================================//
+function importPictureFromUrl(options: { name: string, url: string }): 
+     Picture { const description = { name: options.name };
+     return Meteor.call('ufsImportURL', options.url, description, 'pictures');
 }
+
+//==============================================//
