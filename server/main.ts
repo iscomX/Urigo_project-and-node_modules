@@ -5,7 +5,6 @@ import { Chats, Messages, Users } from '../imports/collections';
 import { MessageType, Picture } from '../imports/models';
 
 Meteor.startup(() => {
-
   if (Meteor.settings) {
     Object.assign(Accounts._options, Meteor.settings['accounts-phone']);
     SMS.twilio = Meteor.settings['twilio'];
@@ -17,7 +16,7 @@ Meteor.startup(() => {
 // url(/assets/chat-background.jpg);
   let picture = importPictureFromUrl({
                                       name: 'user-A.png',
-                                      url: 'https://randomuser.me/api/portraits/women/2.jpg' 
+                                      url: 'https://ionic-meteor.000webhostapp.com/user-A.png'
                                      });
 
   Accounts.createUserWithPhone({
@@ -30,8 +29,8 @@ Meteor.startup(() => {
 
 //==============================User-B========================//
   picture = importPictureFromUrl({
-    name: 'lego1.jpg',
-    url: 'https://randomuser.me/api/portraits/lego/1.jpg'
+    name: 'user-B.jpg',
+    url: 'https://ionic-meteor.000webhostapp.com/user-B.png'
   });
 
   Accounts.createUserWithPhone({
@@ -44,8 +43,8 @@ Meteor.startup(() => {
 
 //==============================User-C========================//
   picture = importPictureFromUrl({
-    name: 'woman1.jpg',
-    url: 'https://randomuser.me/api/portraits/women/1.jpg'
+    name: 'user-C.jpg',
+    url: 'https://ionic-meteor.000webhostapp.com/user-C.jpg'
   });
 
   Accounts.createUserWithPhone({
@@ -58,8 +57,8 @@ Meteor.startup(() => {
 
 //==============================User-D========================//
   picture = importPictureFromUrl({
-    name: 'woman2.jpg',
-    url: 'https://randomuser.me/api/portraits/women/2.jpg'
+    name: 'user-D.jpg',
+    url: 'https://ionic-meteor.000webhostapp.com/user-D.jpg'
   });
 
   Accounts.createUserWithPhone({
@@ -71,8 +70,8 @@ Meteor.startup(() => {
   });
 //==============================User-E========================//
   picture = importPictureFromUrl({
-    name: 'man2.jpg',
-    url: 'https://randomuser.me/api/portraits/men/2.jpg'
+    name: 'user-E.jpg',
+    url: 'https://ionic-meteor.000webhostapp.com/user-E.jpg'
   });
 
   Accounts.createUserWithPhone({
