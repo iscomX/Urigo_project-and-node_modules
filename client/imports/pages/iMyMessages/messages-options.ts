@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AlertController, NavController, NavParams, ViewController } from 'ionic-angular';
 import { MeteorObservable } from 'meteor-rxjs';
-import { ChatsPage } from '../chats/chats';
+import { ChatsPage } from '../iMyChats/chats';
 import template from './messages-options.html';
 
 @Component({

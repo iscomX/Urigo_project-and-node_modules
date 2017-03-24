@@ -4,7 +4,7 @@ import { MeteorObservable } from 'meteor-rxjs';
 import { Pictures } from '../../../../imports/collections';
 import { Profile } from '../../../../imports/models';
 import { PictureService } from '../../services/iMyPicture';
-import { ChatsPage } from '../chats/chats';
+import { ChatsPage } from '../iMyChats/chats';
 import template from './profile.html';
 
 @Component({

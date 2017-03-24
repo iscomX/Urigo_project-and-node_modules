@@ -6,7 +6,7 @@ import { Observable, Subscriber } from 'rxjs';
 import { Chats, Messages, Users, Pictures } from '../../../../imports/collections';
 import { Chat, Message } from '../../../../imports/models';
 import { ChatsOptionsComponent } from './chats-options';
-import { MessagesPage } from '../messages/messages';
+import { MessagesPage } from '../iMyMessages/messages';
 import template from './chats.html';
 import { NewChatComponent } from './new-chat';
 
