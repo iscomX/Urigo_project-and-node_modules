@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController, NavController, NavParams } from 'ionic-angular';
 import { ProfilePage } from '../profile/profile';
-import { PhoneService } from '../../services/phone';
+import { PhoneService } from '../../services/iMyPhone';
 import template from './verification.html';
 
 @Component({

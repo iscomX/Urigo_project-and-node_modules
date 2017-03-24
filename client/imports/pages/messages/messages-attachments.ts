@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AlertController, Platform, ModalController, ViewController } from 'ionic-angular';
 import { Camera } from 'ionic-native';
-import { PictureService } from '../../services/picture';
+import { PictureService } from '../../services/iMyPicture';
 import { MessageType } from '../../../../imports/models';
 import { NewLocationMessageComponent } from './location-message';
 import template from './messages-attachments.html';

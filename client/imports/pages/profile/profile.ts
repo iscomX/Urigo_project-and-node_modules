@@ -3,7 +3,7 @@ import { AlertController, NavController } from 'ionic-angular';
 import { MeteorObservable } from 'meteor-rxjs';
 import { Pictures } from '../../../../imports/collections';
 import { Profile } from '../../../../imports/models';
-import { PictureService } from '../../services/picture';
+import { PictureService } from '../../services/iMyPicture';
 import { ChatsPage } from '../chats/chats';
 import template from './profile.html';
 

@@ -13,8 +13,8 @@ import { NewLocationMessageComponent } from '../pages/messages/location-message'
 import { ShowPictureComponent } from '../pages/messages/show-picture';
 import { ProfilePage } from '../pages/profile/profile';
 import { VerificationPage } from '../pages/verification/verification';
-import { PhoneService } from '../services/phone';
-import { PictureService } from '../services/picture';
+import { PhoneService } from '../services/iMyPhone';
+import { PictureService } from '../services/iMyPicture';
 import { MyApp } from './app.component';
 
 @NgModule({

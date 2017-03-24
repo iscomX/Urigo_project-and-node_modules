@@ -6,7 +6,7 @@ import * as Moment from 'moment';
 import { Observable, Subscription, Subscriber } from 'rxjs';
 import { Messages } from '../../../../imports/collections';
 import { Chat, Message, MessageType, Location } from '../../../../imports/models';
-import { PictureService } from '../../services/picture';
+import { PictureService } from '../../services/iMyPicture';
 import { MessagesAttachmentsComponent } from './messages-attachments';
 import { MessagesOptionsComponent } from './messages-options';
 import { ShowPictureComponent } from './show-picture';
@@ -17,7 +17,7 @@ import template from './messages.html';
 })
 export class MessagesPage implements OnInit, OnDestroy {
   selectedChat: Chat;
-  title: string;
+  title: string;    
   picture: string;
   messagesDayGroups;
   message: string = '';

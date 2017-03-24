@@ -1,6 +1,6 @@
 import { Component, Injectable } from '@angular/core';
 import { Alert, AlertController, NavController, ViewController } from 'ionic-angular';
-import { PhoneService } from '../../services/phone';
+import { PhoneService } from '../../services/iMyPhone';
 import { LoginPage } from '../login/login';
 import { ProfilePage } from '../profile/profile';
 import template from './chats-options.html';
